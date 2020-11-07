@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  body {
+    background: #222;
+  }
+  
+  button {
+    padding: 8px 10px;
+    margin: 12px 0 12px 12px;
+    cursor: pointer;
+  }
+  
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .main-header {
+    background: #333;
+    z-index: 1;
+  }
+  
+  .board {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    z-index: 0;
+  }
+  
+  .tile {
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: dodgerblue;
+    color: rgba(255,255,255,0.9);
+    font-weight: 700;
+    
+     margin: 10px;
+    position: absolute;
+    border-radius: 2px;
+    border: 6px solid transparent;
+  }
+  
+  .drag-tile {
+    background: #1976d2;
+    box-shadow: 
+      0 2px 4px -1px rgba(0,0,0,.2), 
+      0 4px 5px 0 rgba(0,0,0,.14), 
+      0 1px 10px 0 rgba(0,0,0,.12);
+  }
+  
+  .drop-tile {
+    background: #555;
+  }
+  
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .drop-layer {
+    z-index: 0;
+  }
+  
+  .drag-layer {
+    z-index: 1;
+  }
+  
+  .hitting {
+    border-color: rgba(255,255,255,0.35);
+  }
+  
+  .correct {
+    background: #4caf50;
+  }
+  
+  .wrong {
+    background: #c62828;
+  }

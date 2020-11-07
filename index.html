@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header class="main-header">
+            <button id="check-button">Check</button>
+            <button id="reset-button">Reset</button>
+        </header>
+
+        <section class="board">
+
+            <div class="layer drop-layer">
+                <div class="tile drop-tile" data-value="alpha">Alpha</div>
+                <div class="tile drop-tile" data-value="bravo">Bravo</div>
+                <div class="tile drop-tile" data-value="charlie">Charlie</div>
+                <div class="tile drop-tile" data-value="delta">Delta</div>
+            </div>
+
+            <div class="layer drop-layer">
+                <div class="tile drag-tile" data-value="alpha">Alpha</div>
+                <div class="tile drag-tile" data-value="bravo">Bravo</div>
+                <div class="tile drag-tile" data-value="charlie">Charlie</div>
+                <div class="tile drag-tile" data-value="delta">Delta</div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/utils/Draggable.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
